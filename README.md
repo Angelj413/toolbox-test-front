@@ -51,6 +51,9 @@ To run tests, run the following command
   npm run test
 ```
 
+## View
+<img width="1509" alt="image" src="https://user-images.githubusercontent.com/24698585/233446359-7159667b-c1d0-411d-847a-32b5f640c0ed.png">
+
 
 ## Acknowledgements
 
