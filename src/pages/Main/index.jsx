@@ -1,5 +1,5 @@
-import Layout from "../../components/templates/Layout";
-import TablePage from "../../components/templates/TablePage";
+import Layout from '../../components/templates/Layout'
+import TablePage from '../../components/templates/TablePage'
 
 const Main = () => {
   return (

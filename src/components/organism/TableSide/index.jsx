@@ -1,15 +1,14 @@
 
-import { Container, Row, Col } from "react-bootstrap"
-import TableComponent from "../../molecules/Table"
+import { Container, Row, Col } from 'react-bootstrap'
+import TableComponent from '../../molecules/Table'
 import { useSelector, useDispatch } from 'react-redux'
-import { useEffect, useMemo } from "react";
-import { getFiles } from "../../../services/files.services";
+import { useEffect, useMemo } from 'react'
+import { getFiles } from '../../../services/files.services'
 
 const TableSide = () => {
-
-  const { files } = useSelector((state) => state.files);
+  const { files } = useSelector((state) => state.files)
   const { data } = files
-  const dispatch = useDispatch();
+  const dispatch = useDispatch()
 
   useEffect(() => {
     dispatch(getFiles())
@@ -35,7 +34,7 @@ const TableSide = () => {
   ], [])
 
   const tableData = useMemo(() => {
-    let finalData = []
+    const finalData = []
     data.forEach(item => {
       const file = item.file
       item.lines.forEach(i => {
@@ -49,10 +48,10 @@ const TableSide = () => {
   }, [data])
 
   return (
-    <Container fluid className="h-100">
-      <Row className="h-100">
-        <Col className="d-flex justify-content-center w-100 pt-5" style={{ maxHeight: '100vh', overflow: 'scroll' }}>
-          {tableData.length ? <TableComponent columns={columns} data={tableData} /> : <p className="text-light">No data found</p>}
+    <Container fluid className='h-100'>
+      <Row className='h-100'>
+        <Col className='d-flex justify-content-center w-100 pt-5' style={{ maxHeight: '100vh', overflow: 'scroll' }}>
+          {tableData.length ? <TableComponent columns={columns} data={tableData} /> : <p className='text-light'>No data found</p>}
         </Col>
       </Row>
     </Container>
