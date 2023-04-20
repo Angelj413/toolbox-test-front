@@ -18,6 +18,8 @@ This is the client side of the test
 
 ## Run Locally
 
+**IMPORTANT:** You need to have cloned and run the server: https://github.com/Angelj413/toolbox-test-back
+
 Clone the project
 
 ```bash
