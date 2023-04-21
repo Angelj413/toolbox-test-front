@@ -9,7 +9,7 @@ This is the client side of the test
 
 ## Tech Stack
 
-**Server:** React, Boostrap
+**Client:** React, Boostrap
 
 **Unit Testing:** Jest
 
