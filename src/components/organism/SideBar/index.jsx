@@ -64,6 +64,7 @@ const SideBar = () => {
           <ul>
             <li className='text-light'>You can see all lines for all files</li>
             <li className='text-light'>You can search a specific file's lines by file name</li>
+            <li className='text-light'>You can reset the search sending a empty file name request</li>
           </ul>
         </Col>
       </Row>
